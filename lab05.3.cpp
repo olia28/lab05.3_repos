@@ -32,10 +32,10 @@ double y(const double x)
 		do
 		{
 			j++;
-			double R = (pow (x, 2*j))/((2*j));
+			double R = pow(x, 2) / (2 * j - 4 * pow(j, 2));
 			a *= R;
 			S += a;
 		} while (j < 8);
 		return S;
 	}
-}
+}
